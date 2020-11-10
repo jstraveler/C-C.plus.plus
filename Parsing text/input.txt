@@ -1,0 +1,43 @@
+ggGGDdwwqwq    ..dsdeW ONE
+dfdfw
+qw!! , fgfg!
+
+jgjgjgD
+<>!2 fssdfQQ )(*
+
+~`  !@#$%^&*()_+-=?/.,';:"][{}\|
+
+DDLlld|#^@lslfdLDDWDW!@$)($gsg  TEN
+12345)()()__%::789456ghjfghjUUU1230
+
+00:(*:*(
+
+7575//*-+4510!!!~~!234DGFGdfg
+
+#include <string>
+
+using namespace std;
+
+#ifndef LAB2_PARSINGSTRINGS_H   TWELWE
+#define LAB2_PARSINGSTRINGS_H
+
+void trim(string& s);
+
+void parsing(string& s){
+    trim(s);
+}
+
+void trim(          string& s){   THIRTY
+    if(s.length() == 0)
+        s = s  ;
+    int begin, end;
+            begin =         s.find_first_not_of("\a\b\f\n\r\t\v ");
+    end = s.find_last_not_of("\a\b\f\n\r\t\v ");
+    if ((begin ==   string::npos) || (end ==   string::npos)) {
+        s = "";
+    }
+    string(s, begin,     end - begin + 1);
+    //return string(s, begin, end -    begin + 1);   FORTY
+}
+#endif //LAB2_PARSINGSTRINGS_H  END
+
